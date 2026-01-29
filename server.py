@@ -1,9 +1,3 @@
-"""
-Простой HTTP-сервер для раздачи статических файлов сайта.
-Без Flask и других фреймворков — только стандартная библиотека Python.
-Запуск: python server.py
-Сайт откроется по адресу http://localhost:5555/
-"""
 
 import http.server
 import socketserver
@@ -33,3 +27,4 @@ if __name__ == "__main__":
             httpd.serve_forever()
         except KeyboardInterrupt:
             print("\nСервер остановлен.")
+
