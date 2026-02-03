@@ -75,9 +75,9 @@ const concreteData = {
 
 // пикчи теста
 const cubeImages = {
-    whole: 'https://storage.yandexcloud.net/fotora.ru/b4b3dfc658364a35.jpeg',
-    cracked: 'https://storage.yandexcloud.net/fotora.ru/9f66588b3c971677.png',
-    destroyed: 'https://storage.yandexcloud.net/fotora.ru/9704fe7ffbd75134.jpeg'
+    whole: 'https://storage.yandexcloud.net/fotora.ru/ed4df1e11e5b088b.png',
+    cracked: 'https://storage.yandexcloud.net/fotora.ru/e6a4ba3e81c775eb.png',
+    destroyed: 'https://storage.yandexcloud.net/fotora.ru/3a3cd27b1e1b8abe.png'
 };
 
 
@@ -631,6 +631,10 @@ function startTest() {
     testVisualization.style.display = 'block';
     testBtn.style.display = 'none';
 
+    setTimeout(() => {
+        testVisualization.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+
     currentTestValue = 0;
     isTesting = true;
     changeCubeImage('whole');
@@ -715,6 +719,14 @@ function stopTest() {
         if (compareBtn && compareBtn.style.display !== 'none') {
             parent.appendChild(compareBtn);
         }
+    }
+
+    /* Прокрутка панели вниз, чтобы были видны обе кнопки: "Протестировать ещё раз" и "Сравнить" */
+    const scrollTarget = compareBtn && compareBtn.style.display !== 'none' ? compareBtn : testBtn;
+    if (scrollTarget) {
+        setTimeout(() => {
+            scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }, 150);
     }
 }
 
