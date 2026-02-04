@@ -21,7 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Переключение темы
+// тема
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = themeToggle.querySelector('.theme-icon');
 const html = document.documentElement;
@@ -43,7 +43,7 @@ function updateThemeIcon(theme) {
     themeIcon.textContent = theme === 'light' ? '☾' : '☼';
 }
 
-// UI элементы
+// UI
 const sidePanel = document.getElementById('sidePanel');
 const overlay = document.getElementById('overlay');
 const closePanelBtn = document.getElementById('closePanel');
@@ -77,7 +77,7 @@ const concreteData = {
 const cubeImages = {
     whole: 'https://storage.yandexcloud.net/fotora.ru/ed4df1e11e5b088b.png',
     cracked: 'https://storage.yandexcloud.net/fotora.ru/e6a4ba3e81c775eb.png',
-    destroyed: 'https://storage.yandexcloud.net/fotora.ru/3a3cd27b1e1b8abe.png'
+    destroyed: 'https://r2.veo3ai.io/images/9757c820-4314-443f-a30a-733ee574410e-1770215742486-0.png'
 };
 
 
@@ -867,3 +867,4 @@ document.addEventListener('DOMContentLoaded', () => {
     initialize();
     initializeCompositionAnimation();
 });
+
