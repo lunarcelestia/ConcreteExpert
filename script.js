@@ -77,7 +77,7 @@ const concreteData = {
 const cubeImages = {
     whole: 'https://storage.yandexcloud.net/fotora.ru/ed4df1e11e5b088b.png',
     cracked: 'https://storage.yandexcloud.net/fotora.ru/e6a4ba3e81c775eb.png',
-    destroyed: 'https://r2.veo3ai.io/images/9757c820-4314-443f-a30a-733ee574410e-1770215742486-0.png'
+    destroyed: 'https://storage.yandexcloud.net/fotora.ru/ce0d48523e84512b.png'
 };
 
 
@@ -867,4 +867,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initialize();
     initializeCompositionAnimation();
 });
+
 
