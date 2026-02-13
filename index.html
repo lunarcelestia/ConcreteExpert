@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
+    <div class="custom-cursor custom-cursor--map" id="customCursorMap" aria-hidden="true"></div>
 
     <header class="header">
         <div class="header-top">
-            <div class="container">
-                <a href="#top" class="logo">БетонЭксперт</a>
+            <div class="container header-top-inner">
+                <div class="header-left">
+                    <a href="#top" class="logo-link">
+                        <img src="https://storage.yandexcloud.net/fotora.ru/93a823f923abf5a6.png" alt="БетонЭксперт" class="logo-img">
+                    </a>
+                    <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </button>
+                    <nav class="main-nav header-nav-inline" id="headerNav">
+                        <a href="#strength" class="nav-link">КЛАССЫ ПРОЧНОСТИ</a>
+                        <a href="#composition" class="nav-link">СОСТАВ БЕТОНА</a>
+                        <a href="#application" class="nav-link">ПРИМЕНЕНИЕ</a>
+
+                    </nav>
+                </div>
                 <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
                     <span class="theme-icon">🌙</span>
                 </button>
             </div>
         </div>
-        <div class="header-nav">
-            <div class="container">
-                <nav class="main-nav">
-                    <a href="#strength" class="nav-link">КЛАССЫ ПРОЧНОСТИ</a>
-                    <span class="nav-separator">/</span>
-                    <a href="#application" class="nav-link">ПРИМЕНЕНИЕ</a>
-                    <span class="nav-separator">/</span>
-                    <a href="#composition" class="nav-link">СОСТАВ БЕТОНА</a>
-                </nav>
-            </div>
-        </div>
     </header>
-
 
     <div class="hero-banner">
         <img src="https://storage.yandexcloud.net/fotora.ru/4e158ec310bf3f23.jpeg" alt="БЕТОН И ЕГО ПРИМЕНЕНИЕ" />
